@@ -1316,6 +1316,7 @@ select:focus {
 }
 .pricing .product-slider .item .single-product:hover {
   border-color: #f56a79;
+  background: #05317b !important;
 }
 .pricing .product-slider .item .single-product:hover .img .links {
   top: 0px;

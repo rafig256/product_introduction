@@ -91,3 +91,7 @@ html{
         padding: 120px 0px 120px;
     }
 }
+.features-list li{
+    direction: rtl;
+    color: white;
+}
