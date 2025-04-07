@@ -95,3 +95,6 @@ html{
     direction: rtl;
     color: white;
 }
+.rtl {
+    direction: rtl;
+}
