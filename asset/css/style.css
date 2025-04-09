@@ -780,7 +780,7 @@ select:focus {
 ------------------------------*/
 .hero-area {
   position: relative;
-  padding: 243px 0px 250px;
+  padding: 120px 0px 120px;
   background: #ff414d;
 }
 .hero-area .left-content .content .title {
