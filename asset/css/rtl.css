@@ -98,3 +98,90 @@ html{
 .rtl {
     direction: rtl;
 }
+
+/* =============== Team Section =============== */
+.team-card {
+    background: rgba(30, 30, 40, 0.6);
+    border-radius: 16px;
+    padding: 20px 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.team-img-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.glow {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(100, 149, 237, 0.4) 0%, transparent 70%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.team-card:hover .glow {
+    opacity: 1;
+}
+
+.team-card:hover .team-img {
+    border-color: rgba(100, 149, 237, 0.7);
+    filter: brightness(1.1);
+}
+
+.team-info h5 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.team-info .degree {
+    margin: 4px 0 2px;
+    font-size: 0.85rem;
+}
+
+.team-info .role {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Subtle floating animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+.team-member:nth-child(1) .team-card { animation: float 8s infinite ease-in-out; }
+.team-member:nth-child(2) .team-card { animation: float 9s infinite ease-in-out; }
+.team-member:nth-child(3) .team-card { animation: float 8.5s infinite ease-in-out; }
+.team-member:nth-child(4) .team-card { animation: float 9.2s infinite ease-in-out; }
+.team-member:nth-child(5) .team-card { animation: float 8.8s infinite ease-in-out; }
+.team-member:nth-child(6) .team-card { animation: float 9.5s infinite ease-in-out; }
